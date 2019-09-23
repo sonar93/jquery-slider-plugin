@@ -1,19 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="./slider.css">
+    <title>Jquery Slider</title>
+    <link rel="stylesheet" href="./css/slider.css">
 </head>
+
 <body>
-    <ul class='example-slider'>
-        <li data-url="https://example.com/image1.jpg" data-type='image'></li>
-        <li data-url="https://example.com/video1.mp4" data-type='video'></li>
-        <li data-url="https://example.com/image2.png" data-type='image'></li>
-    </ul> 
+    <section class="wrap">
+        <ul class='slider'>
+            <li class="slider__item"
+                data-url="https://images.pexels.com/photos/556416/pexels-photo-556416.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                data-type='image'></li>
+            <li class="slider__item" data-url="./assets/img/video.mp4" data-type='video'></li>
+            <li class="slider__item" data-url="https://wallpaperplay.com/walls/full/9/f/c/34779.jpg" data-type='image'>
+            </li>
+        </ul>
+        <div class="slider__next">Next</div>
+        <div class="slider__prev">Prev</div>
+    </section>
 </body>
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="app.js"></script>
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="app.js"></script>
+
 </html>
